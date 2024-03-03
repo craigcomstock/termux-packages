@@ -1,4 +1,4 @@
-export TERMUX_ARCH=armv7
+export TERMUX_ARCH=arm
 set -ex
 rm /data/data/.built-packages/libgrapheme || true
 #find /data/data/com.termux -name '*grapheme*' | xargs rm -rf
