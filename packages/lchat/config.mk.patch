@@ -1,0 +1,12 @@
+--- a/config.mk	2024-03-03 17:30:31.195458804 +0000
++++ b/config.mk.new	2024-03-03 17:30:49.995312675 +0000
+@@ -6,7 +6,7 @@
+ MANDIR	= $(PREFIX)/man
+ MAN1DIR	= $(MANDIR)/man1
+ 
+-CFLAGS = -std=c99 -pedantic -Wall -Wextra -I/usr/local/include
++CFLAGS = -std=c99 -pedantic -Wall -Wextra -I$(PREFIX)/include
+ 
+ # grapheme.h
+-LIBS = -L/usr/local/lib -lgrapheme
++LIBS = -L$(PREFIX)/lib -lgrapheme
